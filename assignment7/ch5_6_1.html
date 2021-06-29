@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang = "ko">
+    <head>
+        <title>회전 애니메이션</title>
+
+        <style>
+            @keyframes rotation {
+                from {transform : rotate(0deg);}
+                to {transform: rotate(359deg);}
+            }
+
+            #rotate {
+                animation-name : rotation;
+                animation-duration : 1s;
+                animation-iteration-count : infinite;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h3>어지러워요</h3>
+        <hr>
+        <p>
+            <img id = "rotate" src = "media/sponge_5_6.png" width = "50" height = "70">1초에 1회전</p>
+
+    </body>
+</html>
